@@ -35,5 +35,5 @@ fruit_juice_value = pulp.value(fruit_juice) if pulp.value(
 print(
     f"{Fore.LIGHTBLUE_EX}Status: {pulp.LpStatus[model.status]}{Style.RESET_ALL}")
 print(f"{Fore.LIGHTGREEN_EX}Lemonade_produced: {pulp.value(lemonade_value)}{Style.RESET_ALL}")
-print(f"{Fore.LIGHTYELLOW_EX}Fruit Juice produced: {pulp.value(fruit_juice_value)}{Style.BRIGHT}")
-print(f"{Fore.LIGHTRED_EX}Total Profit: {pulp.value(model.objective)}{Style.BRIGHT}")
+print(f"{Fore.LIGHTYELLOW_EX}Fruit Juice produced: {pulp.value(fruit_juice_value)}{Style.RESET_ALL}")
+print(f"{Fore.LIGHTRED_EX}Total Profit: {pulp.value(model.objective)}{Style.RESET_ALL}")
